@@ -58,8 +58,8 @@ class Calculator {
 
   calculate(str) {
     const newStr = str.replace(/\s/g, '');
-    // in javascript regular expressions are used denoted by this symbol --> \\ 
-    // anything inside regular expressions would be searched. In this case \s means that it would replace all the whitespace or tab characters with an empty string.  Here /g means that it is applicable globally which means it won't stop after finding the first whitespace character and would rather iterate throughout the string
+    // in javascript regular expressions are used denoted by this symbol --> // 
+    // anything inside regular expressions would be searched. In this case \s means that it would replace all the whitespace or tab characters with an empty string.  Here `g` means that it is applicable globally which means it won't stop after finding the first whitespace character and would rather iterate throughout the string
 
     if (!/^[0-9+\-*/().]+$/.test(newStr)) {
       throw new Error();
