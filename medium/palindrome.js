@@ -6,7 +6,7 @@
 function isPalindrome(str) {
   let newStr = str.replace(/[^\w]/g, '').replace(/\s/g, '').toLowerCase();
   // explaination of above line 
-  // in javascript regular expressions are used denoted by this symbol --> \\ 
+  // in javascript regular expressions are used denoted by this symbol --> // 
   // anything inside regular expressions would be searched. In this case ^w is used which means anything which is not a word character would be replaced. Here /g means that it is applicable globally which means it won't stop after finding the first non-word character and would rather iterate throughout the string
 
   // the other \s means that it would replace all the whitespace or tab characters with an empty string and here too it is mentioned that it is applicable globally by using /g. Hope you understood what we did here
